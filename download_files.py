@@ -1,10 +1,17 @@
 import requests
 import os
 import sys
+from http.client import responses
 
 class DownloadFile:
     def __init__(self, f, overwrite=False):
         self.base_url = r'http://lstarnes.com/data/sfte2018'
+        self.success = False
+
+        data_dir = os.path.join(os.getcwd(), 'data')
+        if not os.path.exists(data_dir):
+            os.mkdir(data_dir)
+
         if (os.path.isdir(os.path.dirname(f)) and 
             os.path.dirname(f) != f and 
             os.path.lexists(os.path.dirname(f))):
@@ -22,18 +29,28 @@ class DownloadFile:
         if os.path.exists(self.path):
             if not overwrite:
                 print(f'File ({self.path}) already exists and overwrite not enabled.')
-                sys.exit(1)
+                self.success = True
             else:
                 print(f'File ({self.path}) already exists, but overwrite enabled so downloading.')
+                self.get()
+        else:
+            self.get()
 
-        self.get()
+        
 
     def get(self):
-        url = 'http://google.com/favicon.ico'
         r = requests.get(self.url, allow_redirects=True)
-        open(self.path, 'wb').write(r.content)
-        print(f'{self.file} successfully downloaded to {self.path}')
+        if r.status_code == 200:
+            print(f'Downloading {self.file}.')
+            open(self.path, 'wb').write(r.content)
+            print(f'{self.file} successfully downloaded to {self.path}.')
+            self.success = True
+        else:
+            print(f'Bad status code ({r.status_code} - {responses[r.status_code]}) for {r.url}. Unable to download.')
+            
 
 if __name__ == "__main__":
     #Test
     DownloadFile('2018-06-11.h5-maptiles.p', overwrite=True)
+    #bad file
+    DownloadFile('2018-06-11.h5-jibberish.p', overwrite=False)
