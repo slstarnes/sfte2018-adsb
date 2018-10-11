@@ -4,7 +4,7 @@ Notebooks for talk given in October 2018 at the Society of Flight Test Engineers
 
 - - -
 
-[Presentation Notebook](/sfte2018.ipynb)
+[Presentation Notebook](/sfte2018.ipynb) | [Paper](/paper/Visualizing Flight Test Data Interactively With Open Source Tools.pdf)
 
 
 # Intro
