@@ -57,7 +57,7 @@ dependencies:
   - geos=3.6.2
   - heapdict=1.0.0
   - html5lib=0.9999999
-  - icc_rt=2017.0.4
+  - icc_rt
   - imageio=2.4.1
   - ipykernel=4.6.1
   - ipython=6.1.0
@@ -78,16 +78,16 @@ dependencies:
   - lxml=4.2.5
   - m2w64-gcc-libgfortran=5.3.0
   - m2w64-gcc-libs=5.3.0
-  - m2w64-gcc-libs-core=5.3.0
-  - m2w64-gmp=6.1.0
-  - m2w64-libwinpthread-git=5.0.0.4634.697f757
+  - m2w64-gcc-libs-core=5.3
+  - m2w64-gmp=6
+  - m2w64-libwinpthread-git=5.0
   - markupsafe=1.0
   - matplotlib=2.2.2
   - mistune=0.7.4
   - mkl=2017.0.3
   - more-itertools=4.3.0
   - msgpack-python=0.5.6
-  - msys2-conda-epoch=20160418
+  - msys2-conda-epoch
   - multipledispatch=0.6.0
   - nb_anacondacloud=1.4.0
   - nb_conda=2.2.0
@@ -100,7 +100,7 @@ dependencies:
   - numba=0.39.0
   - numpy=1.13.3
   - olefile=0.46
-  - openssl=1.0.2l=vc14hf4c37d5_5
+  - openssl=1.0
   - owslib=0.16.0
   - packaging=17.1
   - pandas=0.23.4
@@ -127,7 +127,7 @@ dependencies:
   - pytz=2017.2
   - pyviz_comms=0.6.0
   - pywavelets=1.0.0
-  - pywinpty=0.5.3
+  - pywinpty=0.5
   - pyyaml=3.12
   - pyzmq=16.0.2
   - requests=2.14.2
@@ -147,13 +147,13 @@ dependencies:
   - toolz=0.9.0
   - tornado=4.5.2
   - traitlets=4.3.2
-  - vc=14
+  - vc
   - vs2015_runtime=14.0.25123
   - wcwidth=0.1.7
   - wheel=0.29.0
   - widgetsnbextension=3.0.2
-  - wincertstore=0.2
-  - winpty=0.4.3
+  - wincertstore
+  - winpty=0.4
   - xarray=0.10.8
   - yaml=0.1.6
   - zict=0.1.3
