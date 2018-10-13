@@ -4,7 +4,7 @@ Notebooks for talk given in October 2018 at the Society of Flight Test Engineers
 
 - - -
 
-[Interactive Presentation Notebooks on Binder](https://mybinder.org/v2/gh/slstarnes/sfte2018-adsb/binder?filepath=sfte2018.ipynb) | [Presentation Notebooks on GitHub](/sfte2018.ipynb) | [Paper](/paper/Visualizing%20Flight%20Test%20Data%20Interactively%20With%20Open%20Source%20Tools.pdf)
+[Interactive Presentation Notebooks on Binder](https://mybinder.org/v2/gh/slstarnes/sfte2018-adsb/binder?filepath=sfte2018.ipynb) | [Static Notebooks on nbviewer](http://nbviewer.jupyter.org/github/slstarnes/sfte2018-adsb/blob/master/sfte2018.ipynb) | [Paper](/paper/Visualizing%20Flight%20Test%20Data%20Interactively%20With%20Open%20Source%20Tools.pdf)
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/slstarnes/sfte2018-adsb/binder?filepath=sfte2018.ipynb)
 
