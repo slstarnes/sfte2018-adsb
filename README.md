@@ -4,8 +4,9 @@ Notebooks for talk given in October 2018 at the Society of Flight Test Engineers
 
 - - -
 
-[Presentation Notebook](/sfte2018.ipynb) | [Paper](/paper/Visualizing%20Flight%20Test%20Data%20Interactively%20With%20Open%20Source%20Tools.pdf)
+[Interactive Presentation Notebooks on Binder](https://mybinder.org/v2/gh/slstarnes/sfte2018-adsb/binder?filepath=sfte2018.ipynb) | [Presentation Notebooks on GitHub](/sfte2018.ipynb) | [Paper](/paper/Visualizing%20Flight%20Test%20Data%20Interactively%20With%20Open%20Source%20Tools.pdf)
 
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/slstarnes/sfte2018-adsb/binder?filepath=sfte2018.ipynb)
 
 # Intro
 Much of the flight test community relies on proprietary tools for data analysis. These tools can be expensive and create a “vendor lock” problem. Configuring a tool or tool chain for a specific use case will always require a fair amount of up-front work. This can include adding the understanding of file and message formats, defining the relationships and levels of aggregation between the different data products, and creating visualizations specific to a project’s goals. If this configuration work is performed within a “walled garden” then the team can become locked in as the cost to exit the specific tool or tool chain becomes higher the longer the team uses the tooling. This is because, over time, more and more project specific information is defined within the walled-off space. Extrication can prove difficult. 
